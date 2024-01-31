@@ -2,7 +2,7 @@ This plugin allow you to interact with the Solana BlockChain inside Unreal Engin
 
 It is under the Apache Licence 2.0 available here: https://www.apache.org/licenses/LICENSE-2.0
 
-In this repo, you have the Unreal Engine project in wich the plugin has been developped for Solana BlockChain. So you can download it and use and/or modify it in order to improve the code. 
+In this repo, you have the Unreal Engine project in wich the plugin has been developped for Solana BlockChain. So you can download it and use and/or modify it in order to improve the code. To launch the project, don't forget to generate visual studio files and to build the uproject (click on yes when it is asked) before working on it
 
 The packaged plugin is available here: https://github.com/ThugzLabs/Thugz-BC-Plugin-Packaged
 
