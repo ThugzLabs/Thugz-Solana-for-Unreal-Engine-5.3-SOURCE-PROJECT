@@ -1,0 +1,27 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\thugzbcfor53\\module.thugzbcfor53.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\intermediate\\build\\win64\\x64\\thugzbcplugin53editor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\thugzbcfor53\\definitions.thugzbcfor53.h",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\intermediate\\build\\win64\\unrealeditor\\inc\\thugzbcfor53\\uht\\thugzbcfor53.init.gen.cpp",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\intermediate\\build\\win64\\unrealeditor\\inc\\thugzbcfor53\\uht\\thugzbcfor53bplibrary.gen.cpp",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\source\\thugzbcfor53\\public\\thugzbcfor53bplibrary.h",
+            "d:\\ue_5.3\\engine\\source\\runtime\\online\\http\\public\\httpmodule.h",
+            "d:\\ue_5.3\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttprequest.h",
+            "d:\\ue_5.3\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpbase.h",
+            "d:\\ue_5.3\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpresponse.h",
+            "d:\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectconverter.h",
+            "d:\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectwrapper.h",
+            "d:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\jsonutilities\\uht\\jsonobjectwrapper.generated.h",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\intermediate\\build\\win64\\unrealeditor\\inc\\thugzbcfor53\\uht\\thugzbcfor53bplibrary.generated.h",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\source\\thugzbcfor53\\private\\thugzbcfor53.cpp",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\source\\thugzbcfor53\\public\\thugzbcfor53.h",
+            "d:\\unreal engine\\projects\\thugzbcplugin53 - copie\\plugins\\thugzbcfor53\\source\\thugzbcfor53\\private\\thugzbcfor53bplibrary.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
