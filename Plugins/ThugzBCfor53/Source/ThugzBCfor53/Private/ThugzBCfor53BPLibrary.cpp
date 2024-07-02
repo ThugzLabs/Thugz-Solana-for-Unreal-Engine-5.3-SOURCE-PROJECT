@@ -1,12 +1,18 @@
 // Created in 2024. Copyright Thugz Labs SAS, all rights reserved.
 
 #include "ThugzBCfor53BPLibrary.h"
+#include "Engine/Texture2D.h"
+#include "Engine/Texture.h"
 #include "ThugzBCfor53.h"
 
 
 
 
 FString UThugzBCBPLibrary::LastJsonResponse = FString("");
+FString UThugzBCBPLibrary::LastTokenBalance = FString("");
+
+
+/////////////////////////////////////////////////////////////HELLOMOON//////////////////////////////////////////////////////////////////////////////
 
 // requête pour HelloMoon API
 void UThugzBCBPLibrary::MakeHelloMoonAPIRequest(const FString& Account, const FString& Barear)
@@ -30,7 +36,115 @@ void UThugzBCBPLibrary::MakeHelloMoonAPIRequest(const FString& Account, const FS
     HttpRequest->ProcessRequest();
 }
 
-// Traitement de la requête pour HelloMoon API
+//Requete pour récupérer l'URI de hellomoon
+void UThugzBCBPLibrary::MakeURIRequest(const FString& URL)
+{
+    TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
+    Request->OnProcessRequestComplete().BindStatic(&UThugzBCBPLibrary::HandleHelloMoonAPIResponse);
+    Request->SetURL(URL);
+    Request->SetVerb("GET");
+    Request->SetHeader("Content-Type", "application/json");
+    Request->ProcessRequest();
+}
+bool UThugzBCBPLibrary::ParseImageURL(const FString& JsonString, FString& OutImageURL)
+{
+    LastJsonResponse = JsonString; // Store the raw JSON response
+
+    TSharedPtr<FJsonObject> JsonObject;
+    TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(JsonString);
+
+    if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
+    {
+        if (JsonObject->HasField("image"))
+        {
+            OutImageURL = JsonObject->GetStringField("image");
+            return true;
+        }
+        else
+        {
+            UE_LOG(LogTemp, Error, TEXT("JSON does not contain 'image' field"));
+        }
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Failed to parse JSON"));
+    }
+
+    return false;
+}
+//Récuperation de l'image et creation de la texture depuis l'URL obtenu par ParseImageURL
+void UThugzBCBPLibrary::DownloadImageAndCreateTexture(const FString& URL, UTexture2D*& OutTexture)
+{
+    TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
+    Request->OnProcessRequestComplete().BindStatic(&UThugzBCBPLibrary::OnImageDownloaded, &OutTexture);
+    Request->SetURL(URL);
+    Request->SetVerb("GET");
+    Request->SetHeader("Content-Type", "application/json");
+    Request->ProcessRequest();
+}
+
+void UThugzBCBPLibrary::OnImageDownloaded(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful, UTexture2D** OutTexture)
+{
+    if (bWasSuccessful && Response.IsValid())
+    {
+        const TArray<uint8>& ImageData = Response->GetContent();
+        *OutTexture = CreateTextureFromImageData(ImageData);
+        if (*OutTexture)
+        {
+            UE_LOG(LogTemp, Log, TEXT("Image downloaded and texture created successfully."));
+        }
+        else
+        {
+            UE_LOG(LogTemp, Error, TEXT("Failed to create texture from downloaded image."));
+        }
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Failed to download image."));
+    }
+}
+
+UTexture2D* UThugzBCBPLibrary::CreateTextureFromImageData(const TArray<uint8>& ImageData)
+{
+    IImageWrapperModule& ImageWrapperModule = FModuleManager::LoadModuleChecked<IImageWrapperModule>(FName("ImageWrapper"));
+    EImageFormat ImageFormat = ImageWrapperModule.DetectImageFormat(ImageData.GetData(), ImageData.Num());
+
+    if (ImageFormat == EImageFormat::Invalid)
+    {
+        UE_LOG(LogTemp, Error, TEXT("Invalid image format."));
+        return nullptr;
+    }
+
+    TSharedPtr<IImageWrapper> ImageWrapper = ImageWrapperModule.CreateImageWrapper(ImageFormat);
+
+    if (ImageWrapper.IsValid() && ImageWrapper->SetCompressed(ImageData.GetData(), ImageData.Num()))
+    {
+        TArray<uint8> UncompressedBGRA;
+        if (ImageWrapper->GetRaw(ERGBFormat::BGRA, 8, UncompressedBGRA))
+        {
+            UTexture2D* Texture = UTexture2D::CreateTransient(ImageWrapper->GetWidth(), ImageWrapper->GetHeight(), PF_B8G8R8A8);
+
+            if (!Texture)
+            {
+                UE_LOG(LogTemp, Error, TEXT("Failed to create transient texture."));
+                return nullptr;
+            }
+
+            void* TextureData = Texture->GetPlatformData()->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
+            FMemory::Memcpy(TextureData, UncompressedBGRA.GetData(), UncompressedBGRA.Num());
+            Texture->GetPlatformData()->Mips[0].BulkData.Unlock();
+
+            Texture->UpdateResource();
+            return Texture;
+        }
+    }
+
+    UE_LOG(LogTemp, Error, TEXT("Failed to uncompress image."));
+    return nullptr;
+}
+
+
+// Traitement de la requête pour les API NFT (HelloMoon ou Moralis)
 void UThugzBCBPLibrary::HandleHelloMoonAPIResponse(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
 {
     if (!bWasSuccessful)
@@ -55,31 +169,6 @@ void UThugzBCBPLibrary::HandleHelloMoonAPIResponse(FHttpRequestPtr Request, FHtt
         LastJsonResponse = FString("ERREUR"); // Réinitialisez la réponse JSON en cas d'erreur
     }
 
-}
-
-// requête pour Etherscan API
-void UThugzBCBPLibrary::MoralisAPIRequest(const FString& AccountAddress, const FString& ApiKey, const FString& Blockchain) {
-
-    FString Url = FString::Printf(TEXT("https://deep-index.moralis.io/api/v2/%s/nft?chain=%s&format=decimal"), *AccountAddress, *Blockchain);
-
-    TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
-    Request->SetURL(Url);
-    Request->SetVerb(TEXT("GET"));
-    Request->SetHeader(TEXT("Accept"), TEXT("application/json"));
-    Request->SetHeader(TEXT("X-API-Key"), *ApiKey);
-    Request->ProcessRequest();
-
-    Request->OnProcessRequestComplete().BindStatic(&UThugzBCBPLibrary::HandleHelloMoonAPIResponse);
-
-    Request->ProcessRequest();
-
-}
-
-
-//requête récupéant la réponse de n'importe quel API pour la mettre dans un FSTRING à parser
-FString UThugzBCBPLibrary::GetLastJsonResponse()
-{
-    return LastJsonResponse;
 }
 
 //Parsing en structure UE du JSON de HelloMoon API
@@ -133,6 +222,91 @@ FRootJson UThugzBCBPLibrary::ConvertSOLJSONtoStruct(FString JsonString)
     return RootStruct;
 }
 
+
+//Balance Solana avec Hellomoon
+
+void UThugzBCBPLibrary::HelloMoonRequestForTokenBalance(const FString& Param, const FString& ApiKey, FString& OutResponse)
+{
+    TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject);
+    JsonObject->SetStringField(TEXT("jsonrpc"), TEXT("2.0"));
+    JsonObject->SetNumberField(TEXT("id"), 1);
+    JsonObject->SetStringField(TEXT("method"), TEXT("getBalance"));
+    TArray<TSharedPtr<FJsonValue>> Params;
+    Params.Add(MakeShareable(new FJsonValueString(Param))); // Use the parameter passed to the function
+    JsonObject->SetArrayField(TEXT("params"), Params);
+
+    FString RequestContent;
+    TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&RequestContent);
+    FJsonSerializer::Serialize(JsonObject.ToSharedRef(), Writer);
+
+    FHttpModule* Http = &FHttpModule::Get();
+    TSharedRef<IHttpRequest, ESPMode::ThreadSafe> HttpRequest = Http->CreateRequest();
+    HttpRequest->SetURL(FString::Printf(TEXT("https://rpc.hellomoon.io/%s"), *ApiKey)); // Use the API Key in the URL
+    HttpRequest->SetVerb(TEXT("POST"));
+    HttpRequest->SetHeader(TEXT("Content-Type"), TEXT("application/json"));
+    HttpRequest->SetHeader(TEXT("Accept"), TEXT("application/json"));
+
+    HttpRequest->SetContentAsString(RequestContent);
+
+    // Bind a lambda to the completion delegate
+    HttpRequest->OnProcessRequestComplete().BindLambda([&OutResponse](FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
+        {
+            if (bWasSuccessful && Response.IsValid())
+            {
+                // Assign the response content to the output parameter
+                OutResponse = Response->GetContentAsString();
+                LastTokenBalance = OutResponse;
+            }
+            else
+            {
+                OutResponse = TEXT("Failed to get a response");
+            }
+        });
+
+    HttpRequest->ProcessRequest();
+}
+
+//Requête récuperant la repons eJSON de getbalance d'HelloMoon pour la mettre dans un double en sortie
+void UThugzBCBPLibrary::GetTokenBamanceFromJsonHelloMoon(const FString& JsonString, double& OutValue)
+{
+    TSharedPtr<FJsonObject> JsonObject;
+    TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(JsonString);
+
+    if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
+    {
+        // Obtention de l'objet "result"
+        const TSharedPtr<FJsonObject>* ResultObject;
+        if (JsonObject->TryGetObjectField(TEXT("result"), ResultObject))
+        {
+            // Extraction et affectation de la valeur à OutValue
+            OutValue = (*ResultObject)->GetNumberField(TEXT("value")) / 1000000000.0;
+        }
+    }
+}
+
+
+
+////////////////////////////////////////////////////////MORALIS//////////////////////////////////////////////////////////////////////////////////////
+// 
+// requête pour Moralis API
+void UThugzBCBPLibrary::MoralisAPIRequest(const FString& AccountAddress, const FString& ApiKey, const FString& Blockchain) {
+
+    FString Url = FString::Printf(TEXT("https://deep-index.moralis.io/api/v2/%s/nft?chain=%s&format=decimal"), *AccountAddress, *Blockchain);
+
+    TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
+    Request->SetURL(Url);
+    Request->SetVerb(TEXT("GET"));
+    Request->SetHeader(TEXT("Accept"), TEXT("application/json"));
+    Request->SetHeader(TEXT("X-API-Key"), *ApiKey);
+    Request->ProcessRequest();
+
+    Request->OnProcessRequestComplete().BindStatic(&UThugzBCBPLibrary::HandleHelloMoonAPIResponse);
+
+    Request->ProcessRequest();
+
+}
+
+//Parsing du JSON de l'API MORALIS
 FEVMFNFTResponse UThugzBCBPLibrary::ConvertEVMJSONtoStruct(FString JsonString)
 {
 
@@ -142,7 +316,7 @@ FEVMFNFTResponse UThugzBCBPLibrary::ConvertEVMJSONtoStruct(FString JsonString)
 
     if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
     {
-       
+
 
         NFTResponse.Status = JsonObject->GetStringField("status");
         NFTResponse.Page = JsonObject->GetIntegerField("page");
@@ -187,8 +361,63 @@ FEVMFNFTResponse UThugzBCBPLibrary::ConvertEVMJSONtoStruct(FString JsonString)
             NFTResponse.Result.Add(NFTData);
         }
 
-       
+
     }
     return NFTResponse;
 }
+// Récupération du JSON de la balance Solana avec MORALIS
+void UThugzBCBPLibrary::MakeMoraliseRequestForSOLBalance(const FString& Pkey, const FString& ApiKey, FString& OutResponse)
+{
+    FString Url = FString::Printf(TEXT("https://solana-gateway.moralis.io/account/mainnet/%s/balance"), *Pkey);
+    TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
+    Request->SetURL(Url);
+    Request->SetVerb(TEXT("GET"));
+    Request->SetHeader(TEXT("accept"), TEXT("application/json"));
+    Request->SetHeader(TEXT("X-API-Key"), ApiKey);
+
+    Request->OnProcessRequestComplete().BindLambda([&OutResponse](FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
+        {
+            if (bWasSuccessful && Response.IsValid())
+            {
+                OutResponse = Response->GetContentAsString();
+            }
+            else
+            {
+                OutResponse = TEXT("Failed to fetch balance");
+            }
+        });
+
+    Request->ProcessRequest();
+}
+
+//Requête récuperant la reponse JSON de la requête MORALIS pour la mettre dans un double en sortie
+void UThugzBCBPLibrary::GetTokenBamanceFromJsonMoralis(const FString& JsonString, double& OutSolanaValue)
+{
+    TSharedPtr<FJsonObject> JsonObject;
+    TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(JsonString);
+
+    if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
+    {
+        if (JsonObject->HasField(TEXT("solana")))
+        {
+            FString SolanaString = JsonObject->GetStringField(TEXT("solana"));
+            OutSolanaValue = FCString::Atod(*SolanaString);
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////TRANSVERSE/////////////////////////////////////////////////////////////////////////////////
+
+//requête récupéant la réponse de n'importe quel API pour la mettre dans un FSTRING à parser
+FString UThugzBCBPLibrary::GetLastJsonResponse()
+{
+    return LastJsonResponse;
+}
+
+FString UThugzBCBPLibrary::GetLastTokenJsonResponse()
+{
+    return LastTokenBalance;
+}
+
+
 

@@ -9,6 +9,14 @@
 #include "Serialization/JsonSerializer.h"
 #include "Dom/JsonObject.h"
 #include "JsonObjectConverter.h"
+#include "Engine/Texture2D.h"
+#include "Engine/Texture.h"
+#include "RenderUtils.h"
+#include "TextureResource.h"
+#include "RenderResource.h"
+#include "IImageWrapper.h"
+#include "IImageWrapperModule.h"
+#include "Misc/Paths.h"
 #include "ThugzBCfor53BPLibrary.generated.h"
 
 class FJsonObject;
@@ -92,16 +100,16 @@ struct FEVMFNFTMetadata
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString Image;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString Name;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString description;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString external_url;
 
 };
@@ -111,49 +119,49 @@ struct FEVMFNFTData
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString Amount;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString TokenId;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString TokenAddress;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString ContractType;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString OwnerOf;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString last_metadata_sync;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString last_token_uri_sync;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString block_number;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString name;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString symbol;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString token_hash;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString token_uri;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString minter_address;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString verified_collection;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FEVMFNFTMetadata Metadata;
 };
 
@@ -162,16 +170,16 @@ struct FEVMFNFTResponse
 {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     FString Status;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     int32 Page;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     int32 PageSize;
 
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Thugz Labs JSON")
     TArray<FEVMFNFTData> Result;
 
 };
@@ -201,10 +209,39 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
     static FEVMFNFTResponse ConvertEVMJSONtoStruct(FString JsonString);
 
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static void HelloMoonRequestForTokenBalance(const FString& Param, const FString& ApiKey, FString& OutResponse);
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static FString GetLastTokenJsonResponse();
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static void GetTokenBamanceFromJsonHelloMoon(const FString& JsonString, double& OutValue);
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static void MakeMoraliseRequestForSOLBalance(const FString& Pkey, const FString& ApiKey, FString& OutResponse);
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static void GetTokenBamanceFromJsonMoralis(const FString& JsonString, double& OutSolanaValue);
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static void MakeURIRequest(const FString& URL);
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static bool ParseImageURL(const FString& JsonString, FString& OutImageURL);
+
+    UFUNCTION(BlueprintCallable, Category = "Web3 Thugz Labs Plugin")
+    static void DownloadImageAndCreateTexture(const FString& URL, UTexture2D*& OutTexture);
+
 private:
     static FString LastJsonResponse;
 
+    static FString LastTokenBalance;
+
     static void HandleHelloMoonAPIResponse(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+
+    static void OnImageDownloaded(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful, UTexture2D** OutTexture);
+    static UTexture2D* CreateTextureFromImageData(const TArray<uint8>& ImageData);
 
 
 };

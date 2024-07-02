@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeThugzBCfor53BPLibrary() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	THUGZBCFOR53_API UClass* Z_Construct_UClass_UThugzBCBPLibrary();
 	THUGZBCFOR53_API UClass* Z_Construct_UClass_UThugzBCBPLibrary_NoRegister();
 	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FCreator();
@@ -474,32 +475,32 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTMetadata>()
 	}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image_MetaData[] = {
-		{ "Category", "EVMFNFTMetadata" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image = { "Image", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, Image), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image = { "Image", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, Image), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name_MetaData[] = {
-		{ "Category", "EVMFNFTMetadata" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, Name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, Name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description_MetaData[] = {
-		{ "Category", "EVMFNFTMetadata" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description = { "description", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, description), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description = { "description", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, description), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_description_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url_MetaData[] = {
-		{ "Category", "EVMFNFTMetadata" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url = { "external_url", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, external_url), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url = { "external_url", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTMetadata, external_url), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url_MetaData), Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_external_url_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Image,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewProp_Name,
@@ -622,109 +623,109 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTData>()
 	}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, Amount), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, Amount), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId = { "TokenId", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, TokenId), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId = { "TokenId", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, TokenId), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress = { "TokenAddress", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, TokenAddress), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress = { "TokenAddress", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, TokenAddress), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenAddress_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType = { "ContractType", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, ContractType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType = { "ContractType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, ContractType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_ContractType_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf = { "OwnerOf", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, OwnerOf), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf = { "OwnerOf", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, OwnerOf), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_OwnerOf_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync = { "last_metadata_sync", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, last_metadata_sync), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync = { "last_metadata_sync", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, last_metadata_sync), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_metadata_sync_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync = { "last_token_uri_sync", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, last_token_uri_sync), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync = { "last_token_uri_sync", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, last_token_uri_sync), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_last_token_uri_sync_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number = { "block_number", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, block_number), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number = { "block_number", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, block_number), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_block_number_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name = { "name", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name = { "name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_name_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol = { "symbol", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, symbol), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol = { "symbol", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, symbol), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_symbol_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash = { "token_hash", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, token_hash), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash = { "token_hash", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, token_hash), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_hash_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri = { "token_uri", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, token_uri), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri = { "token_uri", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, token_uri), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_token_uri_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address = { "minter_address", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, minter_address), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address = { "minter_address", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, minter_address), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_minter_address_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection = { "verified_collection", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, verified_collection), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection = { "verified_collection", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, verified_collection), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_verified_collection_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata_MetaData[] = {
-		{ "Category", "EVMFNFTData" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata = { "Metadata", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, Metadata), Z_Construct_UScriptStruct_FEVMFNFTMetadata, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata_MetaData) }; // 3488245615
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata = { "Metadata", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTData, Metadata), Z_Construct_UScriptStruct_FEVMFNFTMetadata, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata_MetaData), Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Metadata_MetaData) }; // 4139019150
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FEVMFNFTData_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_Amount,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewProp_TokenId,
@@ -815,33 +816,33 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 	}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status_MetaData[] = {
-		{ "Category", "EVMFNFTResponse" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status = { "Status", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, Status), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status = { "Status", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, Status), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page_MetaData[] = {
-		{ "Category", "EVMFNFTResponse" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page = { "Page", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, Page), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page = { "Page", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, Page), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize_MetaData[] = {
-		{ "Category", "EVMFNFTResponse" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize = { "PageSize", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, PageSize), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize_MetaData) };
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_Inner = { "Result", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FEVMFNFTData, METADATA_PARAMS(0, nullptr) }; // 2506184109
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize = { "PageSize", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, PageSize), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_PageSize_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_Inner = { "Result", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FEVMFNFTData, METADATA_PARAMS(0, nullptr) }; // 381650043
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_MetaData[] = {
-		{ "Category", "EVMFNFTResponse" },
+		{ "Category", "Thugz Labs JSON" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, Result), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_MetaData) }; // 2506184109
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEVMFNFTResponse, Result), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_MetaData), Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Result_MetaData) }; // 381650043
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Status,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewProp_Page,
@@ -870,6 +871,77 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_EVMFNFTResponse.InnerSingleton, Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::ReturnStructParams);
 		}
 		return Z_Registration_Info_UScriptStruct_EVMFNFTResponse.InnerSingleton;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execDownloadImageAndCreateTexture)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_URL);
+		P_GET_OBJECT_REF(UTexture2D,Z_Param_Out_OutTexture);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::DownloadImageAndCreateTexture(Z_Param_URL,Z_Param_Out_OutTexture);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execParseImageURL)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_JsonString);
+		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_OutImageURL);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UThugzBCBPLibrary::ParseImageURL(Z_Param_JsonString,Z_Param_Out_OutImageURL);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execMakeURIRequest)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_URL);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::MakeURIRequest(Z_Param_URL);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execGetTokenBamanceFromJsonMoralis)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_JsonString);
+		P_GET_PROPERTY_REF(FDoubleProperty,Z_Param_Out_OutSolanaValue);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::GetTokenBamanceFromJsonMoralis(Z_Param_JsonString,Z_Param_Out_OutSolanaValue);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execMakeMoraliseRequestForSOLBalance)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Pkey);
+		P_GET_PROPERTY(FStrProperty,Z_Param_ApiKey);
+		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_OutResponse);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::MakeMoraliseRequestForSOLBalance(Z_Param_Pkey,Z_Param_ApiKey,Z_Param_Out_OutResponse);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execGetTokenBamanceFromJsonHelloMoon)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_JsonString);
+		P_GET_PROPERTY_REF(FDoubleProperty,Z_Param_Out_OutValue);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::GetTokenBamanceFromJsonHelloMoon(Z_Param_JsonString,Z_Param_Out_OutValue);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execGetLastTokenJsonResponse)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UThugzBCBPLibrary::GetLastTokenJsonResponse();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execHelloMoonRequestForTokenBalance)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Param);
+		P_GET_PROPERTY(FStrProperty,Z_Param_ApiKey);
+		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_OutResponse);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::HelloMoonRequestForTokenBalance(Z_Param_Param,Z_Param_ApiKey,Z_Param_Out_OutResponse);
+		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UThugzBCBPLibrary::execConvertEVMJSONtoStruct)
 	{
@@ -919,9 +991,17 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ConvertEVMJSONtoStruct", &UThugzBCBPLibrary::execConvertEVMJSONtoStruct },
 			{ "ConvertSOLJSONtoStruct", &UThugzBCBPLibrary::execConvertSOLJSONtoStruct },
+			{ "DownloadImageAndCreateTexture", &UThugzBCBPLibrary::execDownloadImageAndCreateTexture },
 			{ "GetLastJsonResponse", &UThugzBCBPLibrary::execGetLastJsonResponse },
+			{ "GetLastTokenJsonResponse", &UThugzBCBPLibrary::execGetLastTokenJsonResponse },
+			{ "GetTokenBamanceFromJsonHelloMoon", &UThugzBCBPLibrary::execGetTokenBamanceFromJsonHelloMoon },
+			{ "GetTokenBamanceFromJsonMoralis", &UThugzBCBPLibrary::execGetTokenBamanceFromJsonMoralis },
+			{ "HelloMoonRequestForTokenBalance", &UThugzBCBPLibrary::execHelloMoonRequestForTokenBalance },
 			{ "MakeHelloMoonAPIRequest", &UThugzBCBPLibrary::execMakeHelloMoonAPIRequest },
+			{ "MakeMoraliseRequestForSOLBalance", &UThugzBCBPLibrary::execMakeMoraliseRequestForSOLBalance },
+			{ "MakeURIRequest", &UThugzBCBPLibrary::execMakeURIRequest },
 			{ "MoralisAPIRequest", &UThugzBCBPLibrary::execMoralisAPIRequest },
+			{ "ParseImageURL", &UThugzBCBPLibrary::execParseImageURL },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -941,7 +1021,7 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventConvertEVMJSONtoStruct_Parms, JsonString), METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventConvertEVMJSONtoStruct_Parms, ReturnValue), Z_Construct_UScriptStruct_FEVMFNFTResponse, METADATA_PARAMS(0, nullptr) }; // 2878852333
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventConvertEVMJSONtoStruct_Parms, ReturnValue), Z_Construct_UScriptStruct_FEVMFNFTResponse, METADATA_PARAMS(0, nullptr) }; // 2612339847
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct_Statics::NewProp_JsonString,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct_Statics::NewProp_ReturnValue,
@@ -1003,6 +1083,53 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics
+	{
+		struct ThugzBCBPLibrary_eventDownloadImageAndCreateTexture_Parms
+		{
+			FString URL;
+			UTexture2D* OutTexture;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_URL_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_URL;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OutTexture;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_URL_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_URL = { "URL", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventDownloadImageAndCreateTexture_Parms, URL), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_URL_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_URL_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_OutTexture = { "OutTexture", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventDownloadImageAndCreateTexture_Parms, OutTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_URL,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::NewProp_OutTexture,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "DownloadImageAndCreateTexture", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::ThugzBCBPLibrary_eventDownloadImageAndCreateTexture_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::ThugzBCBPLibrary_eventDownloadImageAndCreateTexture_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UThugzBCBPLibrary_GetLastJsonResponse_Statics
 	{
 		struct ThugzBCBPLibrary_eventGetLastJsonResponse_Parms
@@ -1035,6 +1162,194 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_GetLastJsonResponse_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics
+	{
+		struct ThugzBCBPLibrary_eventGetLastTokenJsonResponse_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetLastTokenJsonResponse_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "GetLastTokenJsonResponse", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::ThugzBCBPLibrary_eventGetLastTokenJsonResponse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::ThugzBCBPLibrary_eventGetLastTokenJsonResponse_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics
+	{
+		struct ThugzBCBPLibrary_eventGetTokenBamanceFromJsonHelloMoon_Parms
+		{
+			FString JsonString;
+			double OutValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_JsonString_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_JsonString;
+		static const UECodeGen_Private::FDoublePropertyParams NewProp_OutValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_JsonString_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetTokenBamanceFromJsonHelloMoon_Parms, JsonString), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_JsonString_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_JsonString_MetaData) };
+	const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_OutValue = { "OutValue", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetTokenBamanceFromJsonHelloMoon_Parms, OutValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_JsonString,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::NewProp_OutValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "GetTokenBamanceFromJsonHelloMoon", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::ThugzBCBPLibrary_eventGetTokenBamanceFromJsonHelloMoon_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::ThugzBCBPLibrary_eventGetTokenBamanceFromJsonHelloMoon_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics
+	{
+		struct ThugzBCBPLibrary_eventGetTokenBamanceFromJsonMoralis_Parms
+		{
+			FString JsonString;
+			double OutSolanaValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_JsonString_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_JsonString;
+		static const UECodeGen_Private::FDoublePropertyParams NewProp_OutSolanaValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_JsonString_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetTokenBamanceFromJsonMoralis_Parms, JsonString), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_JsonString_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_JsonString_MetaData) };
+	const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_OutSolanaValue = { "OutSolanaValue", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetTokenBamanceFromJsonMoralis_Parms, OutSolanaValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_JsonString,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::NewProp_OutSolanaValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "GetTokenBamanceFromJsonMoralis", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::ThugzBCBPLibrary_eventGetTokenBamanceFromJsonMoralis_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::ThugzBCBPLibrary_eventGetTokenBamanceFromJsonMoralis_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics
+	{
+		struct ThugzBCBPLibrary_eventHelloMoonRequestForTokenBalance_Parms
+		{
+			FString Param;
+			FString ApiKey;
+			FString OutResponse;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Param_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Param;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ApiKey_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ApiKey;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_OutResponse;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_Param_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_Param = { "Param", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventHelloMoonRequestForTokenBalance_Parms, Param), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_Param_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_Param_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_ApiKey_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_ApiKey = { "ApiKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventHelloMoonRequestForTokenBalance_Parms, ApiKey), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_ApiKey_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_ApiKey_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_OutResponse = { "OutResponse", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventHelloMoonRequestForTokenBalance_Parms, OutResponse), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_Param,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_ApiKey,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::NewProp_OutResponse,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "HelloMoonRequestForTokenBalance", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::ThugzBCBPLibrary_eventHelloMoonRequestForTokenBalance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::ThugzBCBPLibrary_eventHelloMoonRequestForTokenBalance_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1090,6 +1405,108 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_MakeHelloMoonAPIRequest_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics
+	{
+		struct ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms
+		{
+			FString Pkey;
+			FString ApiKey;
+			FString OutResponse;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Pkey_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Pkey;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ApiKey_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ApiKey;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_OutResponse;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_Pkey_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_Pkey = { "Pkey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms, Pkey), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_Pkey_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_Pkey_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_ApiKey_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_ApiKey = { "ApiKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms, ApiKey), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_ApiKey_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_ApiKey_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_OutResponse = { "OutResponse", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms, OutResponse), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_Pkey,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_ApiKey,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::NewProp_OutResponse,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "MakeMoraliseRequestForSOLBalance", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics
+	{
+		struct ThugzBCBPLibrary_eventMakeURIRequest_Parms
+		{
+			FString URL;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_URL_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_URL;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::NewProp_URL_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::NewProp_URL = { "URL", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeURIRequest_Parms, URL), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::NewProp_URL_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::NewProp_URL_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::NewProp_URL,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "MakeURIRequest", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::ThugzBCBPLibrary_eventMakeURIRequest_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::ThugzBCBPLibrary_eventMakeURIRequest_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1160,6 +1577,62 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics
+	{
+		struct ThugzBCBPLibrary_eventParseImageURL_Parms
+		{
+			FString JsonString;
+			FString OutImageURL;
+			bool ReturnValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_JsonString_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_JsonString;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_OutImageURL;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_JsonString_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventParseImageURL_Parms, JsonString), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_JsonString_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_JsonString_MetaData) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_OutImageURL = { "OutImageURL", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventParseImageURL_Parms, OutImageURL), METADATA_PARAMS(0, nullptr) };
+	void Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ThugzBCBPLibrary_eventParseImageURL_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ThugzBCBPLibrary_eventParseImageURL_Parms), &Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_JsonString,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_OutImageURL,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "ParseImageURL", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::ThugzBCBPLibrary_eventParseImageURL_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::ThugzBCBPLibrary_eventParseImageURL_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UThugzBCBPLibrary);
 	UClass* Z_Construct_UClass_UThugzBCBPLibrary_NoRegister()
 	{
@@ -1181,11 +1654,19 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UThugzBCBPLibrary_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UThugzBCBPLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct, "ConvertEVMJSONtoStruct" }, // 1198694010
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ConvertEVMJSONtoStruct, "ConvertEVMJSONtoStruct" }, // 3916066939
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ConvertSOLJSONtoStruct, "ConvertSOLJSONtoStruct" }, // 136729762
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture, "DownloadImageAndCreateTexture" }, // 3072356045
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetLastJsonResponse, "GetLastJsonResponse" }, // 2250083252
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse, "GetLastTokenJsonResponse" }, // 2953185741
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon, "GetTokenBamanceFromJsonHelloMoon" }, // 483967262
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis, "GetTokenBamanceFromJsonMoralis" }, // 2640294557
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance, "HelloMoonRequestForTokenBalance" }, // 496770825
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeHelloMoonAPIRequest, "MakeHelloMoonAPIRequest" }, // 2031654314
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance, "MakeMoraliseRequestForSOLBalance" }, // 2800415329
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest, "MakeURIRequest" }, // 3114282993
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MoralisAPIRequest, "MoralisAPIRequest" }, // 2149846132
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL, "ParseImageURL" }, // 1859555092
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UThugzBCBPLibrary_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -1233,25 +1714,25 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 	UThugzBCBPLibrary::UThugzBCBPLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UThugzBCBPLibrary);
 	UThugzBCBPLibrary::~UThugzBCBPLibrary() {}
-	struct Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics
 	{
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo[] = {
+	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo[] = {
 		{ FCreator::StaticStruct, Z_Construct_UScriptStruct_FCreator_Statics::NewStructOps, TEXT("Creator"), &Z_Registration_Info_UScriptStruct_Creator, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreator), 3574071333U) },
 		{ FMetadataJson::StaticStruct, Z_Construct_UScriptStruct_FMetadataJson_Statics::NewStructOps, TEXT("MetadataJson"), &Z_Registration_Info_UScriptStruct_MetadataJson, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMetadataJson), 3681335539U) },
 		{ FNFTData::StaticStruct, Z_Construct_UScriptStruct_FNFTData_Statics::NewStructOps, TEXT("NFTData"), &Z_Registration_Info_UScriptStruct_NFTData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNFTData), 1724773423U) },
 		{ FRootJson::StaticStruct, Z_Construct_UScriptStruct_FRootJson_Statics::NewStructOps, TEXT("RootJson"), &Z_Registration_Info_UScriptStruct_RootJson, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRootJson), 3598655817U) },
-		{ FEVMFNFTMetadata::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewStructOps, TEXT("EVMFNFTMetadata"), &Z_Registration_Info_UScriptStruct_EVMFNFTMetadata, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTMetadata), 3488245615U) },
-		{ FEVMFNFTData::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewStructOps, TEXT("EVMFNFTData"), &Z_Registration_Info_UScriptStruct_EVMFNFTData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTData), 2506184109U) },
-		{ FEVMFNFTResponse::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewStructOps, TEXT("EVMFNFTResponse"), &Z_Registration_Info_UScriptStruct_EVMFNFTResponse, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTResponse), 2878852333U) },
+		{ FEVMFNFTMetadata::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewStructOps, TEXT("EVMFNFTMetadata"), &Z_Registration_Info_UScriptStruct_EVMFNFTMetadata, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTMetadata), 4139019150U) },
+		{ FEVMFNFTData::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewStructOps, TEXT("EVMFNFTData"), &Z_Registration_Info_UScriptStruct_EVMFNFTData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTData), 381650043U) },
+		{ FEVMFNFTResponse::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewStructOps, TEXT("EVMFNFTResponse"), &Z_Registration_Info_UScriptStruct_EVMFNFTResponse, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTResponse), 2612339847U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UThugzBCBPLibrary, UThugzBCBPLibrary::StaticClass, TEXT("UThugzBCBPLibrary"), &Z_Registration_Info_UClass_UThugzBCBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UThugzBCBPLibrary), 240006718U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UThugzBCBPLibrary, UThugzBCBPLibrary::StaticClass, TEXT("UThugzBCBPLibrary"), &Z_Registration_Info_UClass_UThugzBCBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UThugzBCBPLibrary), 2094598389U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_434262162(TEXT("/Script/ThugzBCfor53"),
-		Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo),
-		Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Engine_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_2839904859(TEXT("/Script/ThugzBCfor53"),
+		Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo),
+		Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Copie_Plugins_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo),
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

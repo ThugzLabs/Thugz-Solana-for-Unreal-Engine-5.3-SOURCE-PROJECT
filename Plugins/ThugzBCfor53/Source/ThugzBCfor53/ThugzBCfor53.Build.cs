@@ -25,7 +25,7 @@ public class ThugzBCfor53 : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core","InputCore", "Json", "JsonUtilities", "HTTP"
+				"Core","InputCore", "Json", "JsonUtilities", "HTTP", "Engine", "CoreUObject", "RenderCore", "RHI" 
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
