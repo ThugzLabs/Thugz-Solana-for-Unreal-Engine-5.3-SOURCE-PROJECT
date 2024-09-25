@@ -38,6 +38,7 @@
 "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
 "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp.obj"
 "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Default.rc2.res"
+"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Source\ThirdParty\libsodium\lib\Win64\libsodium.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"

@@ -1,11 +1,11 @@
-"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp"
-/FI"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
-/FI"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Definitions.ThugzBCfor53.h"
-/Yu"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
-/Fp"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.pch"
-/Fo"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp.obj"
-/sourceDependencies "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp.dep.json"
-@"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\ThugzBCfor53.Shared.rsp"
+"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp"
+/FI"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
+/FI"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Definitions.ThugzBCfor53.h"
+/Yu"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
+/Fp"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Intermediate\Build\Win64\x64\ThugzBCPlugin53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.pch"
+/Fo"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp.obj"
+/sourceDependencies "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\Module.ThugzBCfor53.cpp.dep.json"
+@"C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - Source\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThugzBCfor53\ThugzBCfor53.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

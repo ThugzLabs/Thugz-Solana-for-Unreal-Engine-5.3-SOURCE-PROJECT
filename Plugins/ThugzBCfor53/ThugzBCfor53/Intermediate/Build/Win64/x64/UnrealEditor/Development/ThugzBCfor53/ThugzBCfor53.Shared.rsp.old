@@ -258,6 +258,7 @@
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\UHT"
 /I "Developer\WidgetRegistration\Public"
 /I "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Intermediate\Build\Win64\UnrealEditor\Inc\ThugzBCfor53\UHT"
+/I "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Source\ThirdParty\libsodium\include"
 /I "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Source"
 /I "C:\Users\ronan\Documents\Unreal Projects\ThugzBCPlugin53 - VWallet\Plugins\ThugzBCfor53\ThugzBCfor53\Source\ThugzBCfor53\Public"
 /external:W0

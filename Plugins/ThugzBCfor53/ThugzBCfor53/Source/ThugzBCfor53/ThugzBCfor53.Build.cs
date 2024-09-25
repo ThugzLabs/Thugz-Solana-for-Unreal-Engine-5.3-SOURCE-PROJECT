@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnrealBuildTool;
 
@@ -91,12 +92,24 @@ public class ThugzBCfor53 : ModuleRules
 
         try
         {
-            File.Copy(SourceFilePath, DestPath, true);
-            System.Console.WriteLine($"Copied {SourceFilePath} to {DestPath}");
+            if (!File.Exists(DestPath))
+            {
+                File.Copy(SourceFilePath, DestPath, true);
+                System.Console.WriteLine($"Copied {SourceFilePath} to {DestPath}");
+            }
+            else
+            {
+                System.Console.WriteLine($"File {DestPath} already exists. Skipping copy.");
+            }
+        }
+        catch (UnauthorizedAccessException e)
+        {
+            System.Console.WriteLine($"Access to the path {DestPath} is denied: {e.Message}");
         }
         catch (IOException e)
         {
             System.Console.WriteLine($"Failed to copy {SourceFilePath} to {DestPath}: {e.Message}");
         }
     }
+
 }
