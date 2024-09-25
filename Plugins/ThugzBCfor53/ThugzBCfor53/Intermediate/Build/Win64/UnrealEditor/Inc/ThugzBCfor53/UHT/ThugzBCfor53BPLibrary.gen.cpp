@@ -20,6 +20,9 @@ void EmptyLinkFunctionForGeneratedCodeThugzBCfor53BPLibrary() {}
 	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FMetadataJson();
 	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FNFTData();
 	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FRootJson();
+	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FSolMoralisMetaplex();
+	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FSolMoralisNFTMetadata();
+	THUGZBCFOR53_API UScriptStruct* Z_Construct_UScriptStruct_FThugzNFTData();
 	UPackage* Z_Construct_UPackage__Script_ThugzBCfor53();
 // End Cross Module References
 	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_Creator;
@@ -872,13 +875,412 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		}
 		return Z_Registration_Info_UScriptStruct_EVMFNFTResponse.InnerSingleton;
 	}
+	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_ThugzNFTData;
+class UScriptStruct* FThugzNFTData::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_ThugzNFTData.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_ThugzNFTData.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FThugzNFTData, (UObject*)Z_Construct_UPackage__Script_ThugzBCfor53(), TEXT("ThugzNFTData"));
+	}
+	return Z_Registration_Info_UScriptStruct_ThugzNFTData.OuterSingleton;
+}
+template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FThugzNFTData>()
+{
+	return FThugzNFTData::StaticStruct();
+}
+	struct Z_Construct_UScriptStruct_FThugzNFTData_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AssociatedTokenAddress_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_AssociatedTokenAddress;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Mint_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Mint;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Name;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Symbol_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Symbol;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UECodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FThugzNFTData_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//////////////////STRUCTURE POUR SOLANA MORALIS/////////////////////////////////\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "STRUCTURE POUR SOLANA MORALIS" },
+#endif
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FThugzNFTData>();
+	}
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_AssociatedTokenAddress_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_AssociatedTokenAddress = { "AssociatedTokenAddress", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FThugzNFTData, AssociatedTokenAddress), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_AssociatedTokenAddress_MetaData), Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_AssociatedTokenAddress_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Mint_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Mint = { "Mint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FThugzNFTData, Mint), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Mint_MetaData), Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Mint_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Name_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FThugzNFTData, Name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Name_MetaData), Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Name_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Symbol_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Symbol = { "Symbol", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FThugzNFTData, Symbol), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Symbol_MetaData), Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Symbol_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FThugzNFTData_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_AssociatedTokenAddress,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Mint,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Name,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewProp_Symbol,
+	};
+	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FThugzNFTData_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_ThugzBCfor53,
+		nullptr,
+		&NewStructOps,
+		"ThugzNFTData",
+		Z_Construct_UScriptStruct_FThugzNFTData_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::PropPointers),
+		sizeof(FThugzNFTData),
+		alignof(FThugzNFTData),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FThugzNFTData_Statics::Struct_MetaDataParams)
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FThugzNFTData_Statics::PropPointers) < 2048);
+	UScriptStruct* Z_Construct_UScriptStruct_FThugzNFTData()
+	{
+		if (!Z_Registration_Info_UScriptStruct_ThugzNFTData.InnerSingleton)
+		{
+			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_ThugzNFTData.InnerSingleton, Z_Construct_UScriptStruct_FThugzNFTData_Statics::ReturnStructParams);
+		}
+		return Z_Registration_Info_UScriptStruct_ThugzNFTData.InnerSingleton;
+	}
+	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_SolMoralisMetaplex;
+class UScriptStruct* FSolMoralisMetaplex::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_SolMoralisMetaplex.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_SolMoralisMetaplex.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FSolMoralisMetaplex, (UObject*)Z_Construct_UPackage__Script_ThugzBCfor53(), TEXT("SolMoralisMetaplex"));
+	}
+	return Z_Registration_Info_UScriptStruct_SolMoralisMetaplex.OuterSingleton;
+}
+template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FSolMoralisMetaplex>()
+{
+	return FSolMoralisMetaplex::StaticStruct();
+}
+	struct Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MetadataUri_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_MetadataUri;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_UpdateAuthority_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_UpdateAuthority;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SellerFeeBasisPoints_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_SellerFeeBasisPoints;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PrimarySaleHappened_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_PrimarySaleHappened;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsMutable_MetaData[];
+#endif
+		static void NewProp_IsMutable_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsMutable;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MasterEdition_MetaData[];
+#endif
+		static void NewProp_MasterEdition_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_MasterEdition;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UECodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSolMoralisMetaplex>();
+	}
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MetadataUri_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MetadataUri = { "MetadataUri", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisMetaplex, MetadataUri), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MetadataUri_MetaData), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MetadataUri_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_UpdateAuthority_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_UpdateAuthority = { "UpdateAuthority", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisMetaplex, UpdateAuthority), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_UpdateAuthority_MetaData), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_UpdateAuthority_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_SellerFeeBasisPoints_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_SellerFeeBasisPoints = { "SellerFeeBasisPoints", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisMetaplex, SellerFeeBasisPoints), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_SellerFeeBasisPoints_MetaData), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_SellerFeeBasisPoints_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_PrimarySaleHappened_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_PrimarySaleHappened = { "PrimarySaleHappened", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisMetaplex, PrimarySaleHappened), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_PrimarySaleHappened_MetaData), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_PrimarySaleHappened_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable_SetBit(void* Obj)
+	{
+		((FSolMoralisMetaplex*)Obj)->IsMutable = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable = { "IsMutable", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FSolMoralisMetaplex), &Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable_MetaData), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition_SetBit(void* Obj)
+	{
+		((FSolMoralisMetaplex*)Obj)->MasterEdition = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition = { "MasterEdition", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FSolMoralisMetaplex), &Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition_MetaData), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MetadataUri,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_UpdateAuthority,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_SellerFeeBasisPoints,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_PrimarySaleHappened,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_IsMutable,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewProp_MasterEdition,
+	};
+	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_ThugzBCfor53,
+		nullptr,
+		&NewStructOps,
+		"SolMoralisMetaplex",
+		Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::PropPointers),
+		sizeof(FSolMoralisMetaplex),
+		alignof(FSolMoralisMetaplex),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::Struct_MetaDataParams)
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::PropPointers) < 2048);
+	UScriptStruct* Z_Construct_UScriptStruct_FSolMoralisMetaplex()
+	{
+		if (!Z_Registration_Info_UScriptStruct_SolMoralisMetaplex.InnerSingleton)
+		{
+			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_SolMoralisMetaplex.InnerSingleton, Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::ReturnStructParams);
+		}
+		return Z_Registration_Info_UScriptStruct_SolMoralisMetaplex.InnerSingleton;
+	}
+	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata;
+class UScriptStruct* FSolMoralisNFTMetadata::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata, (UObject*)Z_Construct_UPackage__Script_ThugzBCfor53(), TEXT("SolMoralisNFTMetadata"));
+	}
+	return Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata.OuterSingleton;
+}
+template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FSolMoralisNFTMetadata>()
+{
+	return FSolMoralisNFTMetadata::StaticStruct();
+}
+	struct Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Mint_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Mint;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Standard_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Standard;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Name;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Symbol_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Symbol;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Metaplex_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Metaplex;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UECodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSolMoralisNFTMetadata>();
+	}
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Mint_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Mint = { "Mint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisNFTMetadata, Mint), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Mint_MetaData), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Mint_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Standard_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Standard = { "Standard", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisNFTMetadata, Standard), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Standard_MetaData), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Standard_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Name_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisNFTMetadata, Name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Name_MetaData), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Name_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Symbol_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Symbol = { "Symbol", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisNFTMetadata, Symbol), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Symbol_MetaData), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Symbol_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Metaplex_MetaData[] = {
+		{ "Category", "Thugz Labs JSON" },
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Metaplex = { "Metaplex", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSolMoralisNFTMetadata, Metaplex), Z_Construct_UScriptStruct_FSolMoralisMetaplex, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Metaplex_MetaData), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Metaplex_MetaData) }; // 3510946044
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Mint,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Standard,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Name,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Symbol,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewProp_Metaplex,
+	};
+	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_ThugzBCfor53,
+		nullptr,
+		&NewStructOps,
+		"SolMoralisNFTMetadata",
+		Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::PropPointers),
+		sizeof(FSolMoralisNFTMetadata),
+		alignof(FSolMoralisNFTMetadata),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::Struct_MetaDataParams)
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::PropPointers) < 2048);
+	UScriptStruct* Z_Construct_UScriptStruct_FSolMoralisNFTMetadata()
+	{
+		if (!Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata.InnerSingleton)
+		{
+			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata.InnerSingleton, Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::ReturnStructParams);
+		}
+		return Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata.InnerSingleton;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execParseNFTMetadataFromJSON)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_JsonString);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FSolMoralisNFTMetadata*)Z_Param__Result=UThugzBCBPLibrary::ParseNFTMetadataFromJSON(Z_Param_JsonString);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execMakeMoralisNFTMetadataRequest)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_NFTMintAddress);
+		P_GET_PROPERTY(FStrProperty,Z_Param_APIKey);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::MakeMoralisNFTMetadataRequest(Z_Param_NFTMintAddress,Z_Param_APIKey);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execParseNFTDataFromMoralisJSON)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_JsonString);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<FThugzNFTData>*)Z_Param__Result=UThugzBCBPLibrary::ParseNFTDataFromMoralisJSON(Z_Param_JsonString);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UThugzBCBPLibrary::execMakeMoralisAPIRequest)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_OwnerAccount);
+		P_GET_PROPERTY(FStrProperty,Z_Param_APIKey);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UThugzBCBPLibrary::MakeMoralisAPIRequest(Z_Param_OwnerAccount,Z_Param_APIKey);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UThugzBCBPLibrary::execGetSolanaAddressFromPrivateKey)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_PrivateKey);
 		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_PublicKeyHex);
+		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_PublicKeyBase58);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FString*)Z_Param__Result=UThugzBCBPLibrary::GetSolanaAddressFromPrivateKey(Z_Param_PrivateKey,Z_Param_Out_PublicKeyHex);
+		UThugzBCBPLibrary::GetSolanaAddressFromPrivateKey(Z_Param_PrivateKey,Z_Param_Out_PublicKeyHex,Z_Param_Out_PublicKeyBase58);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UThugzBCBPLibrary::execHexToBytes)
@@ -1045,10 +1447,14 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 			{ "HelloMoonRequestForTokenBalance", &UThugzBCBPLibrary::execHelloMoonRequestForTokenBalance },
 			{ "HexToBytes", &UThugzBCBPLibrary::execHexToBytes },
 			{ "MakeHelloMoonAPIRequest", &UThugzBCBPLibrary::execMakeHelloMoonAPIRequest },
+			{ "MakeMoralisAPIRequest", &UThugzBCBPLibrary::execMakeMoralisAPIRequest },
 			{ "MakeMoraliseRequestForSOLBalance", &UThugzBCBPLibrary::execMakeMoraliseRequestForSOLBalance },
+			{ "MakeMoralisNFTMetadataRequest", &UThugzBCBPLibrary::execMakeMoralisNFTMetadataRequest },
 			{ "MakeURIRequest", &UThugzBCBPLibrary::execMakeURIRequest },
 			{ "MoralisAPIRequest", &UThugzBCBPLibrary::execMoralisAPIRequest },
 			{ "ParseImageURL", &UThugzBCBPLibrary::execParseImageURL },
+			{ "ParseNFTDataFromMoralisJSON", &UThugzBCBPLibrary::execParseNFTDataFromMoralisJSON },
+			{ "ParseNFTMetadataFromJSON", &UThugzBCBPLibrary::execParseNFTMetadataFromJSON },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -1263,11 +1669,11 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_EncodeBase58_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Web3 Thugz Labs Plugin" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//Encodage de l'adresse publique Solana en base 58\n" },
+		{ "Comment", "//Code base 58 pour encodage et decodage 58 + Hexadecimal vers Bytes / Base 58 code for encoding and decoding 58 + Hexadecimal to Bytes\n" },
 #endif
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Encodage de l'adresse publique Solana en base 58" },
+		{ "ToolTip", "Code base 58 pour encodage et decodage 58 + Hexadecimal vers Bytes / Base 58 code for encoding and decoding 58 + Hexadecimal to Bytes" },
 #endif
 	};
 #endif
@@ -1308,11 +1714,11 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GenerateSolanaKeyPair_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Web3 Thugz Labs Plugin" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Ajout de la fonction pour g\xef\xbf\xbdn\xef\xbf\xbdrer une paire de cl\xef\xbf\xbds Solana\n" },
+		{ "Comment", "// Ajout de la fonction pour g\xef\xbf\xbdn\xef\xbf\xbdrer une paire de cl\xef\xbf\xbds Solana / Addition of the function for generating a pair of Solana keys\n" },
 #endif
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Ajout de la fonction pour g\xef\xbf\xbdn\xef\xbf\xbdrer une paire de cl\xef\xbf\xbds Solana" },
+		{ "ToolTip", "Ajout de la fonction pour g\xef\xbf\xbdn\xef\xbf\xbdrer une paire de cl\xef\xbf\xbds Solana / Addition of the function for generating a pair of Solana keys" },
 #endif
 	};
 #endif
@@ -1404,14 +1810,14 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		{
 			FString PrivateKey;
 			FString PublicKeyHex;
-			FString ReturnValue;
+			FString PublicKeyBase58;
 		};
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PrivateKey_MetaData[];
 #endif
 		static const UECodeGen_Private::FStrPropertyParams NewProp_PrivateKey;
 		static const UECodeGen_Private::FStrPropertyParams NewProp_PublicKeyHex;
-		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PublicKeyBase58;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -1425,21 +1831,21 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 #endif
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PrivateKey = { "PrivateKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetSolanaAddressFromPrivateKey_Parms, PrivateKey), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PrivateKey_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PrivateKey_MetaData) };
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PublicKeyHex = { "PublicKeyHex", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetSolanaAddressFromPrivateKey_Parms, PublicKeyHex), METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetSolanaAddressFromPrivateKey_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PublicKeyBase58 = { "PublicKeyBase58", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventGetSolanaAddressFromPrivateKey_Parms, PublicKeyBase58), METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PrivateKey,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PublicKeyHex,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_ReturnValue,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::NewProp_PublicKeyBase58,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Web3 Thugz Labs Plugin" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//R\xef\xbf\xbd""cuperation de l'adresse publique SOlana depuis la cl\xef\xbf\xbd priv\xef\xbf\xbd""e\n" },
+		{ "Comment", "//R\xef\xbf\xbd""cuperation de l'adresse publique SOlana depuis la cl\xef\xbf\xbd priv\xef\xbf\xbd""e / Retrieving the SOlana public address from the private key\n" },
 #endif
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "R\xef\xbf\xbd""cuperation de l'adresse publique SOlana depuis la cl\xef\xbf\xbd priv\xef\xbf\xbd""e" },
+		{ "ToolTip", "R\xef\xbf\xbd""cuperation de l'adresse publique SOlana depuis la cl\xef\xbf\xbd priv\xef\xbf\xbd""e / Retrieving the SOlana public address from the private key" },
 #endif
 	};
 #endif
@@ -1713,6 +2119,67 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics
+	{
+		struct ThugzBCBPLibrary_eventMakeMoralisAPIRequest_Parms
+		{
+			FString OwnerAccount;
+			FString APIKey;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OwnerAccount_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_OwnerAccount;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_APIKey_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_APIKey;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_OwnerAccount_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_OwnerAccount = { "OwnerAccount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoralisAPIRequest_Parms, OwnerAccount), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_OwnerAccount_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_OwnerAccount_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_APIKey_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_APIKey = { "APIKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoralisAPIRequest_Parms, APIKey), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_APIKey_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_APIKey_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_OwnerAccount,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::NewProp_APIKey,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Requ\xef\xbf\xbdte Moralis pour r\xef\xbf\xbd""cup\xef\xbf\xbdrer les NFTs d'un wallet / Moralis request to retrieve NFTs from a wallet\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Requ\xef\xbf\xbdte Moralis pour r\xef\xbf\xbd""cup\xef\xbf\xbdrer les NFTs d'un wallet / Moralis request to retrieve NFTs from a wallet" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "MakeMoralisAPIRequest", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::ThugzBCBPLibrary_eventMakeMoralisAPIRequest_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::ThugzBCBPLibrary_eventMakeMoralisAPIRequest_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics
 	{
 		struct ThugzBCBPLibrary_eventMakeMoraliseRequestForSOLBalance_Parms
@@ -1769,6 +2236,67 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics
+	{
+		struct ThugzBCBPLibrary_eventMakeMoralisNFTMetadataRequest_Parms
+		{
+			FString NFTMintAddress;
+			FString APIKey;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_NFTMintAddress_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_NFTMintAddress;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_APIKey_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_APIKey;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_NFTMintAddress_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_NFTMintAddress = { "NFTMintAddress", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoralisNFTMetadataRequest_Parms, NFTMintAddress), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_NFTMintAddress_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_NFTMintAddress_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_APIKey_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_APIKey = { "APIKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventMakeMoralisNFTMetadataRequest_Parms, APIKey), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_APIKey_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_APIKey_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_NFTMintAddress,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::NewProp_APIKey,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Requ\xef\xbf\xbdte pour r\xef\xbf\xbd""cuperer les metadata d'un NFT par Moralis / Request to retrieve the metadata of an NFT by Moralis\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Requ\xef\xbf\xbdte pour r\xef\xbf\xbd""cuperer les metadata d'un NFT par Moralis / Request to retrieve the metadata of an NFT by Moralis" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "MakeMoralisNFTMetadataRequest", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::ThugzBCBPLibrary_eventMakeMoralisNFTMetadataRequest_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::ThugzBCBPLibrary_eventMakeMoralisNFTMetadataRequest_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1938,6 +2466,115 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics
+	{
+		struct ThugzBCBPLibrary_eventParseNFTDataFromMoralisJSON_Parms
+		{
+			FString JsonString;
+			TArray<FThugzNFTData> ReturnValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_JsonString_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_JsonString;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_JsonString_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventParseNFTDataFromMoralisJSON_Parms, JsonString), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_JsonString_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_JsonString_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FThugzNFTData, METADATA_PARAMS(0, nullptr) }; // 2642511416
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventParseNFTDataFromMoralisJSON_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 2642511416
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_JsonString,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_ReturnValue_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Web3 Thugz Labs Plugin" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Parsing de la r\xef\xbf\xbdponse de la requ\xef\xbf\xbdte Moralis / Parsing the response to the Moralis request\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Parsing de la r\xef\xbf\xbdponse de la requ\xef\xbf\xbdte Moralis / Parsing the response to the Moralis request" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "ParseNFTDataFromMoralisJSON", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::ThugzBCBPLibrary_eventParseNFTDataFromMoralisJSON_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::ThugzBCBPLibrary_eventParseNFTDataFromMoralisJSON_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics
+	{
+		struct ThugzBCBPLibrary_eventParseNFTMetadataFromJSON_Parms
+		{
+			FString JsonString;
+			FSolMoralisNFTMetadata ReturnValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_JsonString_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_JsonString;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_JsonString_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventParseNFTMetadataFromJSON_Parms, JsonString), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_JsonString_MetaData), Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_JsonString_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ThugzBCBPLibrary_eventParseNFTMetadataFromJSON_Parms, ReturnValue), Z_Construct_UScriptStruct_FSolMoralisNFTMetadata, METADATA_PARAMS(0, nullptr) }; // 2213736777
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_JsonString,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::Function_MetaDataParams[] = {
+		{ "Category", "JSON Parsing" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Requ\xef\xbf\xbdte pour parser la r\xef\xbf\xbdponse de la fonction: MakeMoralisNFTMetadataRequest / Request to parse the function response: MakeMoralisNFTMetadataRequest\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Requ\xef\xbf\xbdte pour parser la r\xef\xbf\xbdponse de la fonction: MakeMoralisNFTMetadataRequest / Request to parse the function response: MakeMoralisNFTMetadataRequest" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UThugzBCBPLibrary, nullptr, "ParseNFTMetadataFromJSON", nullptr, nullptr, Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::PropPointers), sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::ThugzBCBPLibrary_eventParseNFTMetadataFromJSON_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::Function_MetaDataParams), Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::ThugzBCBPLibrary_eventParseNFTMetadataFromJSON_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UThugzBCBPLibrary);
 	UClass* Z_Construct_UClass_UThugzBCBPLibrary_NoRegister()
 	{
@@ -1963,31 +2600,35 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ConvertSOLJSONtoStruct, "ConvertSOLJSONtoStruct" }, // 136729762
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_DecodeBase58, "DecodeBase58" }, // 3725165274
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_DownloadImageAndCreateTexture, "DownloadImageAndCreateTexture" }, // 3072356045
-		{ &Z_Construct_UFunction_UThugzBCBPLibrary_EncodeBase58, "EncodeBase58" }, // 3420807425
-		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GenerateSolanaKeyPair, "GenerateSolanaKeyPair" }, // 2485986984
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_EncodeBase58, "EncodeBase58" }, // 3614623052
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GenerateSolanaKeyPair, "GenerateSolanaKeyPair" }, // 1405763918
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetLastJsonResponse, "GetLastJsonResponse" }, // 2250083252
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetLastTokenJsonResponse, "GetLastTokenJsonResponse" }, // 2953185741
-		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey, "GetSolanaAddressFromPrivateKey" }, // 3732801974
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetSolanaAddressFromPrivateKey, "GetSolanaAddressFromPrivateKey" }, // 3827425509
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonHelloMoon, "GetTokenBamanceFromJsonHelloMoon" }, // 483967262
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_GetTokenBamanceFromJsonMoralis, "GetTokenBamanceFromJsonMoralis" }, // 2640294557
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_HelloMoonRequestForTokenBalance, "HelloMoonRequestForTokenBalance" }, // 496770825
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_HexToBytes, "HexToBytes" }, // 767219743
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeHelloMoonAPIRequest, "MakeHelloMoonAPIRequest" }, // 2031654314
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisAPIRequest, "MakeMoralisAPIRequest" }, // 1238904245
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoraliseRequestForSOLBalance, "MakeMoraliseRequestForSOLBalance" }, // 2800415329
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeMoralisNFTMetadataRequest, "MakeMoralisNFTMetadataRequest" }, // 583633027
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MakeURIRequest, "MakeURIRequest" }, // 3114282993
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_MoralisAPIRequest, "MoralisAPIRequest" }, // 2149846132
 		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ParseImageURL, "ParseImageURL" }, // 1859555092
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTDataFromMoralisJSON, "ParseNFTDataFromMoralisJSON" }, // 1914530683
+		{ &Z_Construct_UFunction_UThugzBCBPLibrary_ParseNFTMetadataFromJSON, "ParseNFTMetadataFromJSON" }, // 3973476716
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UThugzBCBPLibrary_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UThugzBCBPLibrary_Statics::Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// D\xef\xbf\xbd""finition des fonctions Blueprint\n" },
+		{ "Comment", "// D\xef\xbf\xbd""finition des fonctions pour exposition au Blueprint / Defining functions for Blueprint exposure\n" },
 #endif
 		{ "IncludePath", "ThugzBCfor53BPLibrary.h" },
 		{ "ModuleRelativePath", "Public/ThugzBCfor53BPLibrary.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "D\xef\xbf\xbd""finition des fonctions Blueprint" },
+		{ "ToolTip", "D\xef\xbf\xbd""finition des fonctions pour exposition au Blueprint / Defining functions for Blueprint exposure" },
 #endif
 	};
 #endif
@@ -2024,12 +2665,12 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 	UThugzBCBPLibrary::UThugzBCBPLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UThugzBCBPLibrary);
 	UThugzBCBPLibrary::~UThugzBCBPLibrary() {}
-	struct Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics
 	{
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo[] = {
+	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo[] = {
 		{ FCreator::StaticStruct, Z_Construct_UScriptStruct_FCreator_Statics::NewStructOps, TEXT("Creator"), &Z_Registration_Info_UScriptStruct_Creator, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreator), 3574071333U) },
 		{ FMetadataJson::StaticStruct, Z_Construct_UScriptStruct_FMetadataJson_Statics::NewStructOps, TEXT("MetadataJson"), &Z_Registration_Info_UScriptStruct_MetadataJson, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMetadataJson), 3681335539U) },
 		{ FNFTData::StaticStruct, Z_Construct_UScriptStruct_FNFTData_Statics::NewStructOps, TEXT("NFTData"), &Z_Registration_Info_UScriptStruct_NFTData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNFTData), 1724773423U) },
@@ -2037,12 +2678,15 @@ template<> THUGZBCFOR53_API UScriptStruct* StaticStruct<FEVMFNFTResponse>()
 		{ FEVMFNFTMetadata::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTMetadata_Statics::NewStructOps, TEXT("EVMFNFTMetadata"), &Z_Registration_Info_UScriptStruct_EVMFNFTMetadata, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTMetadata), 4139019150U) },
 		{ FEVMFNFTData::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTData_Statics::NewStructOps, TEXT("EVMFNFTData"), &Z_Registration_Info_UScriptStruct_EVMFNFTData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTData), 381650043U) },
 		{ FEVMFNFTResponse::StaticStruct, Z_Construct_UScriptStruct_FEVMFNFTResponse_Statics::NewStructOps, TEXT("EVMFNFTResponse"), &Z_Registration_Info_UScriptStruct_EVMFNFTResponse, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEVMFNFTResponse), 2612339847U) },
+		{ FThugzNFTData::StaticStruct, Z_Construct_UScriptStruct_FThugzNFTData_Statics::NewStructOps, TEXT("ThugzNFTData"), &Z_Registration_Info_UScriptStruct_ThugzNFTData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FThugzNFTData), 2642511416U) },
+		{ FSolMoralisMetaplex::StaticStruct, Z_Construct_UScriptStruct_FSolMoralisMetaplex_Statics::NewStructOps, TEXT("SolMoralisMetaplex"), &Z_Registration_Info_UScriptStruct_SolMoralisMetaplex, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSolMoralisMetaplex), 3510946044U) },
+		{ FSolMoralisNFTMetadata::StaticStruct, Z_Construct_UScriptStruct_FSolMoralisNFTMetadata_Statics::NewStructOps, TEXT("SolMoralisNFTMetadata"), &Z_Registration_Info_UScriptStruct_SolMoralisNFTMetadata, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSolMoralisNFTMetadata), 2213736777U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UThugzBCBPLibrary, UThugzBCBPLibrary::StaticClass, TEXT("UThugzBCBPLibrary"), &Z_Registration_Info_UClass_UThugzBCBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UThugzBCBPLibrary), 2982057095U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UThugzBCBPLibrary, UThugzBCBPLibrary::StaticClass, TEXT("UThugzBCBPLibrary"), &Z_Registration_Info_UClass_UThugzBCBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UThugzBCBPLibrary), 3594932417U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_779578142(TEXT("/Script/ThugzBCfor53"),
-		Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo),
-		Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___VWallet_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_528599237(TEXT("/Script/ThugzBCfor53"),
+		Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ClassInfo),
+		Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ronan_Documents_Unreal_Projects_ThugzBCPlugin53___Source_Plugins_ThugzBCfor53_ThugzBCfor53_Source_ThugzBCfor53_Public_ThugzBCfor53BPLibrary_h_Statics::ScriptStructInfo),
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
